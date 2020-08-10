@@ -17,7 +17,7 @@
         },
         methods: {
             async getNotification() {
-                const notification = await axios.get('http://testvue.thetunagroup.com?api=notifications')
+                const notification = '{"response":"success","status ":200,"notifications":"Our cinemas will begin to reopen from 31 July"}';
                 this.notificationMessage = notification.data.notifications
             }
         }
